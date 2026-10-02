@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects — Meridian</title>
+<meta name="description" content="Homes, hotels and commercial interiors by Meridian in London, Copenhagen, Warsaw and beyond.">
+<!-- TODO before deploy: replace https://www.meridian-ateliers.com with the real domain (also in robots.txt and sitemap.xml) -->
+<link rel="canonical" href="https://www.meridian-ateliers.com/projects.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meridian">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Projects — Meridian">
+<meta property="og:description" content="Homes, hotels and commercial interiors by Meridian in London, Copenhagen, Warsaw and beyond.">
+<meta property="og:url" content="https://www.meridian-ateliers.com/projects.html">
+<meta property="og:image" content="https://www.meridian-ateliers.com/assets/og/projects.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Projects — Meridian">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects — Meridian">
+<meta name="twitter:description" content="Homes, hotels and commercial interiors by Meridian in London, Copenhagen, Warsaw and beyond.">
+<meta name="twitter:image" content="https://www.meridian-ateliers.com/assets/og/projects.jpg">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- GA4: вставити тег тут -->
+<!-- Meta Pixel: вставити тут -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Meridian, home"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M11 1v20"/></svg><span>Meridian</span></a>
+  <nav class="nav" aria-label="Main"><a href="studio.html">Studio</a><a href="projects.html" aria-current="page">Projects</a><a href="services.html">Services</a><a href="process.html">Process</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></nav>
+  <a class="btn btn--dark" href="contact.html">Book a consultation</a>
+  <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h14M2 12h14"/></svg></button>
+</header>
+<main id="main">
+<section class="wrap intro"><h1 class="display d-page load">Projects</h1><p class="load-2">Homes, hotels and a few rooms for work. Each one began with a site visit and a long conversation.</p></section>
+<div class="filterbar wrap">
+  <div class="filterbar__groups">
+    <div class="filterbar__group" role="group" aria-label="Project type"><button class="chip" type="button" data-filter="type" data-value="All" aria-pressed="true">All types</button><button class="chip" type="button" data-filter="type" data-value="Residential" aria-pressed="false">Residential</button><button class="chip" type="button" data-filter="type" data-value="Hospitality" aria-pressed="false">Hospitality</button><button class="chip" type="button" data-filter="type" data-value="Commercial" aria-pressed="false">Commercial</button></div>
+    <div class="filterbar__sep"></div>
+    <div class="filterbar__group" role="group" aria-label="City"><button class="chip" type="button" data-filter="city" data-value="All" aria-pressed="true">All cities</button><button class="chip" type="button" data-filter="city" data-value="London" aria-pressed="false">London</button><button class="chip" type="button" data-filter="city" data-value="Copenhagen" aria-pressed="false">Copenhagen</button><button class="chip" type="button" data-filter="city" data-value="Warsaw" aria-pressed="false">Warsaw</button><button class="chip" type="button" data-filter="city" data-value="Other" aria-pressed="false">Other</button></div>
+  </div>
+  <span class="small muted" id="pcount" aria-live="polite">10 projects</span>
+  <button class="btn btn--dark filter-open" id="filter-open" type="button" aria-controls="sheet" style="min-height:44px; padding:0 18px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 4h12M4 8h8M6 12h4"/></svg><span id="filter-label">Filters</span></button>
+</div>
+<section class="wrap" style="padding-top:48px">
+  <div class="pgrid" id="pgrid" aria-live="polite"></div>
+  <div class="plate empty" id="pempty" hidden><p class="lede" id="pempty-title">No projects yet.</p><button class="btn btn--dark" id="pempty-btn" type="button">See all cities</button></div>
+</section>
+<section class="wrap" style="padding-top:120px" data-reveal>
+  <div class="split" style="border-top:1px solid var(--line); padding-top:56px; align-items:center"><p class="lede">Don't see what you're looking for?</p><a class="btn btn--outline" href="contact.html">Talk to us <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></div>
+</section>
+<div class="sheet" id="sheet" aria-hidden="true">
+  <button class="sheet__scrim" type="button" aria-label="Close filters"></button>
+  <div class="sheet__panel" role="dialog" aria-label="Filter projects">
+    <div class="sheet__handle"></div>
+    <div class="row between"><span class="h3">Filter</span><button type="button" id="sheet-reset" class="small muted" style="text-decoration:underline; min-height:44px">Reset</button></div>
+    <div class="stack" style="gap:12px"><span class="small muted">Type</span><div class="tags"><button class="chip" type="button" data-filter="type" data-value="All" aria-pressed="true">All types</button><button class="chip" type="button" data-filter="type" data-value="Residential" aria-pressed="false">Residential</button><button class="chip" type="button" data-filter="type" data-value="Hospitality" aria-pressed="false">Hospitality</button><button class="chip" type="button" data-filter="type" data-value="Commercial" aria-pressed="false">Commercial</button></div></div>
+    <div class="stack" style="gap:12px"><span class="small muted">City</span><div class="tags"><button class="chip" type="button" data-filter="city" data-value="All" aria-pressed="true">All cities</button><button class="chip" type="button" data-filter="city" data-value="London" aria-pressed="false">London</button><button class="chip" type="button" data-filter="city" data-value="Copenhagen" aria-pressed="false">Copenhagen</button><button class="chip" type="button" data-filter="city" data-value="Warsaw" aria-pressed="false">Warsaw</button><button class="chip" type="button" data-filter="city" data-value="Other" aria-pressed="false">Other</button></div></div>
+    <button class="btn btn--dark" id="sheet-show" type="button" style="min-height:56px">Show 10 projects</button>
+  </div>
+</div>
+</main>
+<footer class="footer wrap" data-reveal>
+  <div class="footer__grid">
+    <div class="stack" style="gap:16px"><a class="logo" href="index.html"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M11 1v20"/></svg><span>Meridian</span></a><span class="muted" style="max-width:280px">Practising since 2012. 86 projects completed across nine countries.</span></div>
+    <div class="stack"><span class="muted" style="margin-bottom:8px">Studio</span><a class="text-link" href="studio.html">Studio</a><a class="text-link" href="projects.html">Projects</a><a class="text-link" href="services.html">Services</a><a class="text-link" href="process.html">Process</a><a class="text-link" href="journal.html">Journal</a><a class="text-link" href="contact.html">Contact</a></div>
+    <div class="stack"><span class="muted" style="margin-bottom:8px">London</span><span>27 Lamb's Conduit Street</span><span>London WC1N 3NJ</span></div><div class="stack"><span class="muted" style="margin-bottom:8px">Copenhagen</span><span>Overgaden Neden Vandet 41</span><span>1414 Copenhagen K</span></div><div class="stack"><span class="muted" style="margin-bottom:8px">Warsaw</span><span>ul. Mokotowska 51</span><span>00-542 Warsaw</span></div>
+  </div>
+  <div class="footer__bar"><span>© 2026 Meridian Studio</span><div class="row"><a class="text-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><a class="text-link" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest</a><a class="text-link" href="contact.html#privacy">Privacy</a></div></div>
+  <div class="wordmark" aria-hidden="true">Meridian</div>
+</footer>
+<div class="mcta"><span>Planning a project?</span><a class="btn btn--light" href="contact.html">Book a consultation</a></div>
+<div class="mnav on-dark" id="mnav" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+  <div class="mnav__top"><a class="logo" href="index.html"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M11 1v20"/></svg><span>Meridian</span></a><button class="mnav__close" type="button" aria-label="Close menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.5" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg></button></div>
+  <nav class="mnav__list" aria-label="Mobile"><a class="stagger" style="--i:0" href="index.html">Home</a><a class="stagger" style="--i:1" href="studio.html">Studio</a><a class="stagger" style="--i:2" href="projects.html" aria-current="page">Projects</a><a class="stagger" style="--i:3" href="services.html">Services</a><a class="stagger" style="--i:4" href="process.html">Process</a><a class="stagger" style="--i:5" href="journal.html">Journal</a><a class="stagger" style="--i:6" href="contact.html">Contact</a></nav>
+  <div class="mnav__foot stagger" style="--i:9"><a class="btn btn--light" href="contact.html">Book a consultation</a><span>London, Copenhagen, Warsaw</span></div>
+</div>
+<script>window.MERIDIAN_PROJECTS = [{"name": "Harbour House", "city": "Copenhagen", "region": "Copenhagen", "type": "Residential", "img": "assets/img/harbour-house.jpg", "wh": [1328, 1760], "video": "assets/video/harbour-house.mp4", "h": 620, "hm": 420}, {"name": "The Mews Residence", "city": "London", "region": "London", "type": "Residential", "img": "assets/img/mews-residence.jpg", "wh": [1328, 1760], "h": 460, "hm": 300}, {"name": "Hotel Wilanów", "city": "Warsaw", "region": "Warsaw", "type": "Hospitality", "img": "assets/img/hotel-wilanow.jpg", "wh": [1328, 1760], "h": 540, "hm": 380}, {"name": "Marylebone Gallery", "city": "London", "region": "London", "type": "Commercial", "img": "assets/img/marylebone-gallery.jpg", "wh": [1328, 1760], "h": 380, "hm": 260}, {"name": "Saska Kępa Villa", "city": "Warsaw", "region": "Warsaw", "type": "Residential", "img": "assets/img/saska-kepa-villa.jpg", "wh": [1328, 1760], "h": 580, "hm": 400}, {"name": "Nyhavn Townhouse", "city": "Copenhagen", "region": "Copenhagen", "type": "Residential", "img": "assets/img/nyhavn-townhouse.jpg", "wh": [1328, 1760], "h": 420, "hm": 300}, {"name": "Skagen Summer House", "city": "Other", "region": "Denmark", "type": "Residential", "img": "assets/img/skagen-summer-house.jpg", "wh": [1328, 1760], "h": 500, "hm": 360}, {"name": "Østerbro Showroom", "city": "Copenhagen", "region": "Copenhagen", "type": "Commercial", "img": "assets/img/osterbro-showroom.jpg", "wh": [1328, 1760], "h": 440, "hm": 280}, {"name": "Holland Park Apartment", "city": "London", "region": "London", "type": "Residential", "img": "assets/img/holland-park-apartment.jpg", "wh": [1328, 1760], "h": 360, "hm": 260}, {"name": "Deià Retreat", "city": "Other", "region": "Mallorca", "type": "Hospitality", "img": "assets/img/deia-retreat.jpg", "wh": [1328, 1760], "h": 600, "hm": 420}];</script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

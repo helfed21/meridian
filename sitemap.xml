@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: replace the domain before deploy -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.meridian-ateliers.com/</loc></url>
+  <url><loc>https://www.meridian-ateliers.com/studio.html</loc></url>
+  <url><loc>https://www.meridian-ateliers.com/projects.html</loc></url>
+  <url><loc>https://www.meridian-ateliers.com/harbour-house.html</loc></url>
+  <url><loc>https://www.meridian-ateliers.com/services.html</loc></url>
+  <url><loc>https://www.meridian-ateliers.com/process.html</loc></url>
+  <url><loc>https://www.meridian-ateliers.com/journal.html</loc></url>
+  <url><loc>https://www.meridian-ateliers.com/contact.html</loc></url>
+</urlset>

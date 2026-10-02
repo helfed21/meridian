@@ -1,0 +1,5 @@
+# TODO: replace the domain before deploy
+User-agent: *
+Allow: /
+
+Sitemap: https://www.meridian-ateliers.com/sitemap.xml
